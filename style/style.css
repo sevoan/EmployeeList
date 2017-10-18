@@ -13,8 +13,8 @@ QHeaderView::section {
     background: #E0F2F1;
     padding: 4px;
     border: 0px;
-    border-right: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
+    border-right: 1px solid #CFD8DC;
+    border-bottom: 1px solid #CFD8DC;
 }
 
 QHeaderView::section:last {
@@ -382,7 +382,7 @@ QMenuBar:hover {
 }
 
 QMenuBar::item {
-    padding: 10px 10px;
+    padding: 5px 10px;
     color: black;
 }
 

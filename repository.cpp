@@ -53,7 +53,8 @@ void RepositoryPrivate::init()
 
     bool opened = database.open();
     if (!opened) {
-        emit q->error(tr("Can't open database: %1").arg(DB_NAME));
+        emit q->error(tr("Can't open database: %1 | %2")
+                      .arg(DB_NAME, database.lastError().text()));
         return;
     }
 
