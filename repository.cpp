@@ -155,12 +155,12 @@ void RepositoryPrivate::mapEmployeeToQuery(const Employee& employee, QSqlQuery& 
     query.bindValue(QStringLiteral(":id"),                  employee.id());
     query.bindValue(QStringLiteral(":name"),                employee.name());
     query.bindValue(QStringLiteral(":birth_year"),          employee.birthYear());
-    query.bindValue(QStringLiteral(":gender"),              QVariant::fromValue(employee.gender()));
+    query.bindValue(QStringLiteral(":gender"),              QVariant::fromValue(employee.gender()).toInt());
     query.bindValue(QStringLiteral(":nationality_id"),      employee.nationality().id());
     query.bindValue(QStringLiteral(":position_name"),       employee.positionName());
     query.bindValue(QStringLiteral(":education"),           employee.education());
     query.bindValue(QStringLiteral(":specialization"),      employee.specialization());
-    query.bindValue(QStringLiteral(":position_type"),       QVariant::fromValue(employee.positionType()));
+    query.bindValue(QStringLiteral(":position_type"),       QVariant::fromValue(employee.positionType()).toInt());
     query.bindValue(QStringLiteral(":experience"),          employee.experience());
     query.bindValue(QStringLiteral(":works_from_year"),     employee.worksFromYear());
     query.bindValue(QStringLiteral(":teaches"),             employee.teaches());
