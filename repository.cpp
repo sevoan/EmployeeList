@@ -702,13 +702,15 @@ void Repository::filterEmployees(const QString& sql)
 {
     Q_D(const Repository);
 
+    QVector<Employee> employees;
+
     QSqlQuery query(d->database);
     query.prepare(sql.isEmpty() ? "SELECT rowid,* FROM employee" : sql);
 
-    if (!d->execAndValidate(query, Q_FUNC_INFO))
+    if (!d->execAndValidate(query, Q_FUNC_INFO)) {
+        emit employeesChanged(employees);
         return;
-
-    QVector<Employee> employees;
+    }
 
     while (query.next())
         employees << d->mapQueryToEmployee(query);
