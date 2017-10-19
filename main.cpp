@@ -8,6 +8,8 @@
 #include <QDateTime>
 #include <QTranslator>
 
+//#define DEBUG
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -16,6 +18,8 @@ int main(int argc, char *argv[])
     QTranslator translator;
     translator.load(":/locale/uk_UA");
     qApp->installTranslator(&translator);
+
+#ifdef DEBUG
 
     QDateTime lastModified;
 
@@ -40,6 +44,16 @@ int main(int argc, char *argv[])
     });
 
     cssReloadTimer->start();
+
+#else
+
+    QFile file("style.css");
+    if (file.open(QIODevice::ReadOnly))
+        qApp->setStyleSheet(QString(file.readAll()));
+    else
+        qDebug() << "Cannot open style.css file";
+
+#endif
 
     MainWindow w;
     w.show();

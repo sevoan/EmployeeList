@@ -149,7 +149,7 @@
     <message>
         <location filename="employeetablemodel.cpp" line="58"/>
         <source>Name</source>
-        <translation>Ім&apos;я</translation>
+        <translation type="unfinished">Ім&apos;я, прізвище та побатькові</translation>
     </message>
     <message>
         <location filename="employeetablemodel.cpp" line="59"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="employeetablemodel.cpp" line="63"/>
         <source>Education</source>
-        <translation>навч. заклад</translation>
+        <translation type="unfinished">Навч. заклад</translation>
     </message>
     <message>
         <location filename="employeetablemodel.cpp" line="64"/>
