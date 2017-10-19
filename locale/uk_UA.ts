@@ -490,7 +490,7 @@
     <message>
         <location filename="sqlshortcutdialog.ui" line="163"/>
         <source>Test   </source>
-        <translation>Тест</translation>
+        <translation type="unfinished">Тест       </translation>
     </message>
     <message>
         <location filename="sqlshortcutdialog.ui" line="227"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="sqlshortcutdialog.ui" line="243"/>
         <source>Edit  </source>
-        <translation>Редагувати</translation>
+        <translation>   Редагувати</translation>
     </message>
     <message>
         <location filename="sqlshortcutdialog.ui" line="259"/>
