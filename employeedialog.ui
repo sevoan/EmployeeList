@@ -26,9 +26,6 @@
    <iconset resource="resources.qrc">
     <normaloff>:/svg/grey/account.svg</normaloff>:/svg/grey/account.svg</iconset>
   </property>
-  <property name="locale">
-   <locale language="Ukrainian" country="Ukraine"/>
-  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="topMargin">
     <number>0</number>

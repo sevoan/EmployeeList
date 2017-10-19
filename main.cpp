@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <QFile>
 #include <QTimer>
+#include <QLocale>
 #include <QFileInfo>
 #include <QDateTime>
 #include <QTranslator>
@@ -18,6 +19,8 @@ int main(int argc, char *argv[])
     QTranslator translator;
     translator.load(":/locale/uk_UA");
     qApp->installTranslator(&translator);
+
+    qDebug() << QLocale::system().name();
 
 #ifdef DEBUG
 
@@ -47,16 +50,19 @@ int main(int argc, char *argv[])
 
 #else
 
-    QFile file("style.css");
+    QFile file(":/style/style.css");
     if (file.open(QIODevice::ReadOnly))
         qApp->setStyleSheet(QString(file.readAll()));
     else
         qDebug() << "Cannot open style.css file";
 
-#endif
-
     MainWindow w;
     w.show();
+
+#endif
+
+
+
 
     return a.exec();
 }
