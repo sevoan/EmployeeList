@@ -63,3 +63,7 @@ FORMS += \
     weekloaddialog.ui \
     notificator.ui \
     sqlshortcutdialog.ui
+
+TRANSLATIONS += \
+    locale/uk_UA.ts \
+    locale/ru_RU.ts

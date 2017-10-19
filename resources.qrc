@@ -1,17 +1,15 @@
 <RCC>
-    <qresource prefix="/">                
+    <qresource prefix="/">
         <file>svg/grey/account.svg</file>
         <file>svg/grey/account-edit.svg</file>
         <file>svg/grey/account-multiple.svg</file>
         <file>svg/grey/account-plus.svg</file>
         <file>svg/grey/account-remove.svg</file>
         <file>svg/grey/hexagon-multiple.svg</file>
-        
         <file>svg/grey/menu-up.svg</file>
         <file>svg/grey/menu-down.svg</file>
         <file>svg/grey/menu-left.svg</file>
         <file>svg/grey/menu-right.svg</file>
-        
         <file>svg/grey/plus.svg</file>
         <file>svg/grey/minus.svg</file>
         <file>svg/grey/database.svg</file>
@@ -21,18 +19,13 @@
         <file>svg/grey/filter.svg</file>
         <file>svg/grey/logout.svg</file>
         <file>svg/grey/copyright.svg</file>
-        
-<!--            WHITE ICONS                   -->
-        
         <file>svg/white/account-edit.svg</file>
         <file>svg/white/account-plus.svg</file>
         <file>svg/white/account-remove.svg</file>
-        
         <file>svg/white/menu-up.svg</file>
         <file>svg/white/menu-down.svg</file>
         <file>svg/white/menu-left.svg</file>
         <file>svg/white/menu-right.svg</file>
-        
         <file>svg/white/plus.svg</file>
         <file>svg/white/minus.svg</file>
         <file>svg/white/hexagon-multiple.svg</file>
@@ -43,7 +36,7 @@
         <file>svg/white/filter.svg</file>
         <file>svg/white/logout.svg</file>
         <file>svg/white/copyright.svg</file>
-        
         <file>style/style.css</file>
+        <file>locale/uk_UA.qm</file>
     </qresource>
 </RCC>

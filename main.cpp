@@ -6,10 +6,16 @@
 #include <QTimer>
 #include <QFileInfo>
 #include <QDateTime>
+#include <QTranslator>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    // Temporary apply localization here
+    QTranslator translator;
+    translator.load(":/locale/uk_UA");
+    qApp->installTranslator(&translator);
 
     QDateTime lastModified;
 
@@ -32,6 +38,7 @@ int main(int argc, char *argv[])
             file.close();
         }
     });
+
     cssReloadTimer->start();
 
     MainWindow w;
