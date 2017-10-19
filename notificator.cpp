@@ -30,8 +30,6 @@ void NotificatorPrivate::init()
 {
     Q_Q(Notificator);
 
-    q->hide();
-
     animator.setTargetObject(this);
     animator.setDirection(QPropertyAnimation::Backward);
     animator.setStartValue(positionOffset);
@@ -44,12 +42,7 @@ void NotificatorPrivate::init()
 
         bool directionForward = animator.direction() == QPropertyAnimation::Forward;
         bool directionBackward = animator.direction() == QPropertyAnimation::Backward;
-        bool animationRunning = newState == QPropertyAnimation::Running;
         bool animationStopped = newState == QPropertyAnimation::Stopped;
-
-        if (animationRunning && directionForward)
-            // Notificator animation just started
-            q->show();
 
         if (animationStopped && directionBackward)
             // Animation has stopped and it set notificator to hidden state

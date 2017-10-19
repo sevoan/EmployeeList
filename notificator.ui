@@ -59,7 +59,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Can't remove nationality which is in use. Please delete bound employee first</string>
+        <string/>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
